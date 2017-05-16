@@ -8,6 +8,10 @@
      <![CDATA[ 
 		<script>
 		if(!RVBD_EUE){
+		   var tag1 = (document.URL.indexOf('about_page') > 0 ? 
+			document.URL.replace("https://" + document.domain + "/groups/about_page/","").substring(0, 22) :
+			document.URL.replace("https://" + document.domain + "/groups/","").substring(0, 22)
+		   );
 		   var RVBD_EUE={startJS:Number(new Date()),
 		   clientId:'',appId:1,
 		   collector:'cht4501.lsdc.ch.pmi',
@@ -15,7 +19,7 @@
 		   sv:'0401',
 		   ajax:true, sync:true,
 		   ajaxResponseTime:true,
-		   tag1:document.URL.replace("https://" + document.domain + "/groups/","").substring(0, 22)};
+		   tag1:tag1};
 
 		   (function(){
 			  var w=window,l=w.addEventListener,m=w.attachEvent,
