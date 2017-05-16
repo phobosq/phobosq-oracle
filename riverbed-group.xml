@@ -40,7 +40,8 @@
 			osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {
 				document.getElementById("osapi").innerHTML += "<br>osapi.appdata.get: " + gadgets.json.stringify(data) + ".";
 			});
-		};		
+		};
+  		appdata_get();
 		</script>
 		</div>
      ]]> 
