@@ -35,6 +35,7 @@
 		   })();}
 		</script>
 		<div id="osapi" style="display:block;">
+		</div>
 		<script>
 		var appdata_get = function() {
 			osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {
@@ -43,7 +44,6 @@
 		};
   		appdata_get();
 		</script>
-		</div>
      ]]> 
    </Content> 
 </Module>
