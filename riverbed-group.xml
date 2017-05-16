@@ -34,7 +34,7 @@
 			  else{x.parentNode.insertBefore(j,x);}
 		   })();}
 		</script>
-		<div id="osapi" style="height:0; line-height:0; display:block; overflow:hidden; zoom:1; visibility:hidden">
+		<div id="osapi" style="display:block;">
 		<script>
 		var appdata_get = function() {
 			osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {
