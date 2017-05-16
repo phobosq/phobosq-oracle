@@ -2,6 +2,7 @@
 <Module>
 	<ModulePrefs title="Riverbed tracking gadget for group" description="Riverbed tracking gadget for group" author="Szymon Wojcik" author_email="szymon.wojcik@pmi.com" height="1">
   		<Require feature="dynamic-height"/>
+		<Require feature="osapi"/>
   	</ModulePrefs>
    <Content type="html"> 
      <![CDATA[ 
