@@ -15,6 +15,10 @@
 		   sv:'0401',
 		   ajax:true, sync:true,
 		   ajaxResponseTime:true};
+
+		if (document.URL.indexOf("groups") > 0) {
+		   RVBD_EUE.tag1 = document.URL.replace("https://" + document.domain + "/groups/","").substring(0, 22);
+		}
 		   (function(){
 			  var w=window,l=w.addEventListener,m=w.attachEvent,
 			  d=document,s='script',t='load',o=RVBD_EUE,
@@ -37,15 +41,6 @@
 		</script>
 		<div id="osapi" style="display:block;">
 		</div>
-
-		<script>
-		var appdata_get = function() {
-			osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {
-				document.getElementById("osapi").innerHTML += "<br>osapi.appdata.get: " + gadgets.json.stringify(data) + ".";
-			});
-		};
-  		appdata_get();
-		</script>
      ]]> 
    </Content> 
 </Module>
