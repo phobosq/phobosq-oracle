@@ -9,8 +9,8 @@
 		<script>
 		console.log("parent");
 		console.log(parent);
-		console.log("parent.document");
-		console.log(parent.document);
+		console.log("document");
+		console.log(document);
 		if(!RVBD_EUE){
 		   var tag1 = ''; // parent.jamApp.currentGroup.attributes.displayName;
 		   var tag2 = '5ogpJR2XIhWjfuhUYSyYDO'; // parent.jamApp.urlFor.groupAbout(jamApp.currentGroup.attributes.groupId, false);
