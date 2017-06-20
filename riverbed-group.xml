@@ -7,10 +7,10 @@
    <Content type="html"> 
      <![CDATA[ 
 		<script>
-		console.log("parent");
-		console.log(parent);
-		console.log("document");
-		console.log(document);
+		console.log("parent.URL");
+		console.log(parent.URL);
+		console.log("document.URL");
+		console.log(document.URL);
 		if(!RVBD_EUE){
 		   var tag1 = ''; // parent.jamApp.currentGroup.attributes.displayName;
 		   var tag2 = '5ogpJR2XIhWjfuhUYSyYDO'; // parent.jamApp.urlFor.groupAbout(jamApp.currentGroup.attributes.groupId, false);
