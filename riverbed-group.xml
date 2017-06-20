@@ -10,7 +10,7 @@
 		</div>
 	<script>
 		console.log("osapi.appdata.get");
-		//console.log(osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {console.log(userData); }));
+		//console.log(osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {console.log(JSON.stringify(userData)); }));
 
 var appdata_get = function() {
     osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {
