@@ -6,7 +6,9 @@
   	</ModulePrefs>
    <Content type="html"> 
      <![CDATA[ 
-		<script>
+		<div id="osapi" style="display:block;">
+		</div>
+	<script>
 		console.log("osapi.appdata.get");
 		//console.log(osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {console.log(userData); }));
 
@@ -52,8 +54,7 @@ appdata_get();
 			  else{x.parentNode.insertBefore(j,x);}
 		   })();}
 		</script>
-		<div id="osapi" style="display:block;">
-		</div>
+
      ]]> 
    </Content> 
 </Module>
