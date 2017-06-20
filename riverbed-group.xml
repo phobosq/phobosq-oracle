@@ -8,7 +8,7 @@
      <![CDATA[ 
 		<script>
 		console.log("osapi.appdata.get");
-		console.log(osapi.appdata.get().execute(function(userData) {console.log(userData); });
+		console.log(osapi.appdata.get().execute(function(userData) {console.log(userData); }));
 		console.log("gadgets.sapjam.context");
 		console.log(gadgets.sapjam.context);
 		if(!RVBD_EUE){
