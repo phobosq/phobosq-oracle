@@ -14,7 +14,7 @@
 
 var appdata_get = function() {
     osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {
-        document.getElementById("osapi").innerHTML += "<br>osapi.appdata.get: " + gadgets.json.stringify(data) + ".";
+        document.getElementById("osapi").innerHTML += "<br>osapi.appdata.get: " + gadgets.json.stringify(userData) + ".";
     });
 };
 appdata_get();
