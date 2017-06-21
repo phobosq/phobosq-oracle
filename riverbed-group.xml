@@ -10,10 +10,10 @@
 		</div>
 	<script>
 		console.log("osapi.appdata.get");
-		//console.log(osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {console.log(JSON.stringify(userData)); }));
+		//console.log(osapi.appdata.get({userId: '@viewer', groupId: '@self'}).execute(function(userData) {console.log(JSON.stringify(userData)); }));
 
 var appdata_get = function() {
-    osapi.appdata.get({userId: '@viewer', groupId: '@self', keys: ['stuff']}).execute(function(userData) {
+    osapi.appdata.get({userId: '@viewer', groupId: '@self'}).execute(function(userData) {
         document.getElementById("osapi").innerHTML += "<br>osapi.appdata.get: " + gadgets.json.stringify(userData) + ".";
     });
 };
