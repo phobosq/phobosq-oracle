@@ -19,7 +19,7 @@ var appdata_get = function() {
 };
 appdata_get();
 
-<script>
+
   var get_appdata = function() {
     osapi.appdata.get({userId: '@viewer', groupId: '@self'}).execute(function(userData) {
       if (userData.error){
@@ -47,6 +47,7 @@ appdata_get();
 <button onclick="update_appdata()">update appdata</button>
 <textarea id="results"></textarea>
 
+<script>
 		console.log("gadgets.sapjam.context");
 		console.log(gadgets.sapjam.context);
 		if(!RVBD_EUE){
