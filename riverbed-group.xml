@@ -44,6 +44,8 @@
 				      else{x.parentNode.insertBefore(j,x);}
 				   })();}
 			}
+
+			riverbedCall('id', 'name');
 			gadgets.sapjam.context.get(function(context){
 				console.log(context);
 				riverbedCall(context.group.id, context.group.name);
