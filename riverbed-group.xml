@@ -10,12 +10,9 @@
 		//gadgets.util.registerOnLoadHandler(
 		  // function () {
 			//console.log("gadgets.sapjam.context");
-			//gadgets.sapjam.context.get(function(context){
-				//console.log(context);
 
+			var riverbedCall = function (tag1, tag2) {
 				if(!RVBD_EUE){
-				   var tag1 = 'id'; 
-				   var tag2 = 'name'; 
 				   var RVBD_EUE={startJS:Number(new Date()),
 				   clientId:'',appId:1,
 				   collector:'cht4501.lsdc.ch.pmi',
@@ -46,6 +43,11 @@
 				      if(o.sync){d.write('<'+s+' src=\''+r+'\'></'+s+'>');}
 				      else{x.parentNode.insertBefore(j,x);}
 				   })();}
+			}
+			gadgets.sapjam.context.get(function(context){
+				console.log(context);
+				riverbedCall(context.group.id, context.group.name);
+			});
 //			   });
 //		    }
 //		);
