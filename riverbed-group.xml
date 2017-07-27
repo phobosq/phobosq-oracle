@@ -9,42 +9,21 @@
 		<div id="osapi" style="display:block;">
 		</div>
 	<script>
-		console.log("osapi.appdata.get");
-		//console.log(osapi.appdata.get({userId: '@viewer', groupId: '@self'}).execute(function(userData) {console.log(JSON.stringify(userData)); }));
 
-var appdata_get = function() {
-    osapi.appdata.get({userId: '@viewer', groupId: '@self'}).execute(function(userData) {
-        document.getElementById("osapi").innerHTML += "<br>osapi.appdata.get: " + gadgets.json.stringify(userData) + ".";
-    });
-};
-appdata_get();
-
-
-  var get_appdata = function() {
     osapi.appdata.get({userId: '@viewer', groupId: '@self'}).execute(function(userData) {
       if (userData.error){
         alert(userData.error.message);
       }
       else{
         for (var n in userData) {
-          document.getElementById('results').value = JSON.stringify(userData[n]);        
-          break;
+          document.getElementById('results').value = JSON.stringify(userData[n]);
+	  console.log(JSON.stringify(userData[n]));
         }
       }    
     });
-  };
-  var update_appdata = function() {
-    var json = JSON.parse(document.getElementById('results').value);
-    osapi.appdata.update({userId: '@viewer', groupId: '@self', data: json}).execute(function (userData) {
-      if (userData.error){
-        alert(userData.error.message);
-      }
-   });
-  };
+
 </script>
 
-<button onclick="get_appdata()">get appdata</button>
-<button onclick="update_appdata()">update appdata</button>
 <textarea id="results"></textarea>
 
 <script>
