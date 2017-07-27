@@ -12,6 +12,7 @@
 		console.log("gadgets.sapjam.context");
 		gadgets.sapjam.context.get(function(context){
 			console.log(context);
+			
 			if(!RVBD_EUE){
 			   var tag1 = context.group.id; // parent.jamApp.currentGroup.attributes.displayName;
 			   var tag2 = context.group.name; // parent.jamApp.urlFor.groupAbout(jamApp.currentGroup.attributes.groupId, false);
@@ -44,6 +45,7 @@
 				  if(o.sync){d.write('<'+s+' src=\''+r+'\'></'+s+'>');}
 				  else{x.parentNode.insertBefore(j,x);}
 			   })();}
+		   });
 		</script>
 
      ]]> 
