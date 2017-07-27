@@ -29,13 +29,14 @@
 
 <script>
 		console.log("gadgets.sapjam.context");
+		var gadgetContext = '';
 		console.log(gadgets.sapjam.context.get(function(context){
-			console.log(JSON.stringify(context));
+			gadgetContext = context;
 		}));
 
 		if(!RVBD_EUE){
-		   var tag1 = ''; // parent.jamApp.currentGroup.attributes.displayName;
-		   var tag2 = '5ogpJR2XIhWjfuhUYSyYDO'; // parent.jamApp.urlFor.groupAbout(jamApp.currentGroup.attributes.groupId, false);
+		   var tag1 = gadgetContext.group.id; // parent.jamApp.currentGroup.attributes.displayName;
+		   var tag2 = gadgetContext.group.name; // parent.jamApp.urlFor.groupAbout(jamApp.currentGroup.attributes.groupId, false);
 		   var RVBD_EUE={startJS:Number(new Date()),
 		   clientId:'',appId:1,
 		   collector:'cht4501.lsdc.ch.pmi',
