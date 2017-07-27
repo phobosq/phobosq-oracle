@@ -10,24 +10,6 @@
 			<textarea id="results"></textarea>
 		</div>
 	<script>
-
-    osapi.appdata.get({userId: '@viewer', groupId: '@self'}).execute(function(userData) {
-      if (userData.error){
-        alert(userData.error.message);
-      }
-      else{
-        for (var n in userData) {
-          document.getElementById('results').value = JSON.stringify(userData[n]);
-	  console.log(JSON.stringify(userData[n]));
-        }
-      }    
-    });
-
-</script>
-
-<textarea id="results"></textarea>
-
-<script>
 		console.log("gadgets.sapjam.context");
 		var gadgetContext = '';
 		gadgets.sapjam.context.get(function(context){
