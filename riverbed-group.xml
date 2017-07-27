@@ -22,9 +22,7 @@
 				   collectorHttpPort:80, collectorHttpsPort:443,
 				   sv:'0401',
 				   ajax:true, sync:true,
-				   ajaxResponseTime:true,
-				   tag1:tag1,
-				   tag2:tag2};
+				   ajaxResponseTime:true};
 
 				   console.log(RVBD_EUE);
 
