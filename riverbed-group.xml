@@ -30,7 +30,7 @@
 <script>
 		console.log("gadgets.sapjam.context");
 		console.log(gadgets.sapjam.context.get(function(context){
-			console.log(JSON.stringify(context);
+			console.log(JSON.stringify(context));
 		}));
 		if(!RVBD_EUE){
 		   var tag1 = ''; // parent.jamApp.currentGroup.attributes.displayName;
