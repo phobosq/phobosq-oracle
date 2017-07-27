@@ -14,8 +14,8 @@
 				//console.log(context);
 
 				if(!RVBD_EUE){
-				   var tag1 = context.group.id; 
-				   var tag2 = context.group.name; 
+				   var tag1 = 'id'; 
+				   var tag2 = 'name'; 
 				   var RVBD_EUE={startJS:Number(new Date()),
 				   clientId:'',appId:1,
 				   collector:'cht4501.lsdc.ch.pmi',
