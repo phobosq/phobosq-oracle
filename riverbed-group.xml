@@ -11,7 +11,7 @@
 		   function () {
 			console.log("gadgets.sapjam.context");
 			gadgets.sapjam.context.get(function(context){
-				console.log(context);
+				//console.log(context);
 
 				if(!RVBD_EUE){
 				   var tag1 = context.group.id; 
@@ -26,7 +26,7 @@
 				   tag1:tag1,
 				   tag2:tag2};
 
-				   console.log(RVBD_EUE);
+				   //console.log(RVBD_EUE);
 
 				(function(){
 				      var w=window,l=w.addEventListener,m=w.attachEvent,
