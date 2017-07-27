@@ -28,14 +28,13 @@
 
 				   console.log(RVBD_EUE);
 
-				   (function(){
+				(function(){
 				      var w=window,l=w.addEventListener,m=w.attachEvent,
 				      d=document,s='script',t='load',o=RVBD_EUE,
-				      z='-1ec0805dd88c137a7d9b221342ef4c8b.',
 				      r=(('https:'===d.location.protocol)?
-				      'https://3bdee2bedfb5297319ce'+z+'ssl':
-				      'http://4a3dbfdd6470b7f43a03'+z+'r63')+
-				      '.cf1.rackcdn.com/riverbed_appinternals.d.'+
+				      'https://cht4501.lsdc.ch.pmi:443':
+				      'http://cht4501.lsdc.ch.pmi:80')+
+				      '/jsi/riverbed_appinternals.d.'+
 				      (o.ajax?'ajax.js':'js'),p=('onpagehide' in w),e=p?'pageshow':t,
 				      j=d.createElement(s),x=d.getElementsByTagName(s)[0],
 				      h=function(y){o.ldJS=o.ldJS||new Date();o.per=y?y.persisted:null;},
