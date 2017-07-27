@@ -30,9 +30,11 @@
 <script>
 		console.log("gadgets.sapjam.context");
 		var gadgetContext = '';
-		console.log(gadgets.sapjam.context.get(function(context){
+		gadgets.sapjam.context.get(function(context){
 			gadgetContext = context;
-		}));
+		});
+
+		console.log(gadgetContext);
 
 		if(!RVBD_EUE){
 		   var tag1 = gadgetContext.group.id; // parent.jamApp.currentGroup.attributes.displayName;
