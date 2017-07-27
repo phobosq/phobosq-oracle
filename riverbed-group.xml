@@ -7,8 +7,8 @@
      <![CDATA[ 
 	<div style="display:none;">&nbsp;</div>
 	<script>
-		gadgets.util.registerOnLoadHandler(
-		   function () {
+		//gadgets.util.registerOnLoadHandler(
+		  // function () {
 			//console.log("gadgets.sapjam.context");
 			//gadgets.sapjam.context.get(function(context){
 				//console.log(context);
@@ -47,8 +47,8 @@
 				      else{x.parentNode.insertBefore(j,x);}
 				   })();}
 //			   });
-		    }
-		);
+//		    }
+//		);
   		</script>
 
      ]]> 
