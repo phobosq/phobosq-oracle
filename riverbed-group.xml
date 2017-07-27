@@ -32,6 +32,7 @@
 		console.log(gadgets.sapjam.context.get(function(context){
 			console.log(JSON.stringify(context));
 		}));
+
 		if(!RVBD_EUE){
 		   var tag1 = ''; // parent.jamApp.currentGroup.attributes.displayName;
 		   var tag2 = '5ogpJR2XIhWjfuhUYSyYDO'; // parent.jamApp.urlFor.groupAbout(jamApp.currentGroup.attributes.groupId, false);
