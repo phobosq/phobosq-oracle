@@ -9,7 +9,7 @@
 	<script>
 		gadgets.util.registerOnLoadHandler(
 		   function () {
-			console.log("gadgets.sapjam.context");
+			//console.log("gadgets.sapjam.context");
 			gadgets.sapjam.context.get(function(context){
 				//console.log(context);
 
