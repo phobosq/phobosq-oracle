@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module specificationVersion='2'>
 	<ModulePrefs title="Riverbed tracking gadget for group" description="Riverbed tracking gadget for group" author="Szymon Wojcik" author_email="szymon.wojcik@pmi.com" height="1">
-  		<Require feature="dynamic-height"/>
+  		
   	</ModulePrefs>
    <Content type="html"> 
      <![CDATA[ 
