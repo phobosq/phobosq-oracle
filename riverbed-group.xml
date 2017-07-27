@@ -11,9 +11,11 @@
 		</div>
 	<script>
 		console.log("gadgets.sapjam.context");
-		global gadgetContext = {};
+		var gadgetContext = {};
 		gadgets.sapjam.context.get(function(context){
+			console.log(gadgetContext);
 			gadgetContext = context;
+			console.log(gadgetContext);
 		});
 
 		console.log(gadgetContext);
