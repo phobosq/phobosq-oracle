@@ -6,8 +6,8 @@
    <Content type="html"> 
      <![CDATA[ 
 		<script>
-		gadgets.util.registerOnLoadHandler(
-			function () {
+		//gadgets.util.registerOnLoadHandler(
+			//function () {
 			//gadgets.sapjam.context.get(function(context){
 			//	console.log(context);
 
@@ -39,8 +39,8 @@
 					if(o.sync){d.write('<'+s+' src=\''+r+'\'></'+s+'>');}
 					else{x.parentNode.insertBefore(j,x);}
 				})();
-			}}
-		   ); 
+			}
+		   //}); 
 		</script>
 		<div>&nbsp;</div>
      ]]> 
