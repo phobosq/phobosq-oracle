@@ -10,9 +10,8 @@
 		//gadgets.util.registerOnLoadHandler(
 		  // function () {
 			//console.log("gadgets.sapjam.context");
-			var RVBD_EUE = {};
  
-			var riverbedObjectBuild = function (tag1, tag2) {
+			var riverbedObjectBuild = function (tag1, tag2, tag3 = '') {
 				if(!RVBD_EUE){
 				   var RVBD_EUE={
 					startJS:Number(new Date()),
@@ -25,13 +24,17 @@
 					sync:true,
 				   	ajaxResponseTime:true,
 				   	tag1:tag1,
-				   	tag2:tag2
+				   	tag2:tag2,
+					tag3:tag3
 				    };
 				}
+				return RVBD_EUE;
 			}
-			console.log(RVBD_EUE);
 
-			var riverbedCall = function(){
+
+			var riverbedCall = function(RVBD_EUE){
+					console.log(RVBD_EUE);
+
 				      var w=window,l=w.addEventListener,m=w.attachEvent,
 				      d=document,s='script',t='load',o=RVBD_EUE,
 				      r=(('https:'===d.location.protocol)?
