@@ -9,7 +9,7 @@
 		<script>
 		//gadgets.util.registerOnLoadHandler(
 			//function () {
-				var prefs = gadgets.Prefs();
+				var prefs = new gadgets.Prefs();
 				console.log(prefs.getString("jamTargetItem"));
 
 				if(!RVBD_EUE){
