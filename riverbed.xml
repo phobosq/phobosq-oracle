@@ -8,9 +8,9 @@
 		<script>
 		//gadgets.util.registerOnLoadHandler(
 			//function () {
-			gadgets.sapjam.context.get(function(context){
-				console.log(context);
-			});	
+				function getURLParameter(name) {
+				  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+				}
 				if(!RVBD_EUE){
 					var RVBD_EUE={startJS:Number(new Date()),
 					clientId:'FEDDD9C43ED1CF89',appId:1,
@@ -18,7 +18,8 @@
 					collectorHttpPort:80, collectorHttpsPort:443,
 					sv:'0401',
 					ajax:true, sync:true,
-					ajaxResponseTime:true};
+					ajaxResponseTime:true,
+					tag1:getURLParameter('homeID')};
 					(function(){
 						var w=window,l=w.addEventListener,m=w.attachEvent,
 						d=document,s='script',t='load',o=RVBD_EUE,
