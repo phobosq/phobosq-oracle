@@ -6,7 +6,7 @@
    <Content type="html"> 
      <![CDATA[ 
 		<script>
-		gadgets.util.registerOnLoadHandler(
+		gadgets.util.registerOnLoadHandler() {
 			gadgets.sapjam.context.get(function(context){
 				console.log(context);
 
