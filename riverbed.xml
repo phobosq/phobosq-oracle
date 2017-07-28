@@ -6,6 +6,10 @@
    <Content type="html"> 
      <![CDATA[ 
 		<script>
+		gadgets.sapjam.context.get(function(context){
+			console.log(context);
+
+		});
 		gadgets.util.registerOnLoadHandler(
 			function() {
 				if(!RVBD_EUE){
