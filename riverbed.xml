@@ -3,12 +3,15 @@
 	<ModulePrefs title="Riverbed tracking gadget" description="Riverbed tracking gadget" author="Szymon Wojcik" author_email="szymon.wojcik@pmi.com" height="1">
   		<Require feature="dynamic-height"/>
   	</ModulePrefs>
+	<UserPref name="jamTargetItem" display_name="itemID" default_value="Home" />
    <Content type="html"> 
      <![CDATA[ 
 		<script>
 		//gadgets.util.registerOnLoadHandler(
 			//function () {
-				console.log(parent.location.href);
+				var prefs = gadgets.Prefs();
+				console.log(prefs);
+
 				if(!RVBD_EUE){
 					var RVBD_EUE={startJS:Number(new Date()),
 					clientId:'FEDDD9C43ED1CF89',appId:1,
