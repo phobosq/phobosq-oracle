@@ -6,11 +6,11 @@
    <Content type="html"> 
      <![CDATA[ 
 		<script>
-		gadgets.sapjam.context.get(function(context){
-			console.log(context);
-
-		});
 		gadgets.util.registerOnLoadHandler(
+			gadgets.sapjam.context.get(function(context){
+				console.log(context);
+
+			});
 			function() {
 				if(!RVBD_EUE){
 					var RVBD_EUE={startJS:Number(new Date()),
