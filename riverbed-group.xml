@@ -7,10 +7,9 @@
      <![CDATA[ 
 	<div style="display:none;">&nbsp;</div>
 	<script>
-		//gadgets.util.registerOnLoadHandler(
-		  // function () {
-			//console.log("gadgets.sapjam.context");
- 
+		gadgets.util.registerOnLoadHandler(
+		   function () {
+			 
 			var riverbedObjectBuild = function (tag1, tag2, tag3 = '') {
 				if(!RVBD_EUE){
 				   var RVBD_EUE={
@@ -35,7 +34,8 @@
 			var riverbedCall = function(RVBD_EUE){
 					console.log(RVBD_EUE);
 
-				      var w=window,l=w.addEventListener,m=w.attachEvent,
+				      (function(){
+					var w=window,l=w.addEventListener,m=w.attachEvent,
 				      d=document,s='script',t='load',o=RVBD_EUE,
 				      r=(('https:'===d.location.protocol)?
 				      'https://cht4501.lsdc.ch.pmi:443':
@@ -51,15 +51,15 @@
 				      {m('on'+e,h);if(p){m('on'+t,i);}}
 				      if(o.sync){d.write('<'+s+' src=\''+r+'\'></'+s+'>');}
 				      else{x.parentNode.insertBefore(j,x);}
+					})();
 				   }
 
 			gadgets.sapjam.context.get(function(context){
 				console.log(context);
 				riverbedCall(riverbedObjectBuild(context.group.id, context.group.name));
 			});
-//			   });
-//		    }
-//		);
+		    }
+		);
   		</script>
 
      ]]> 
