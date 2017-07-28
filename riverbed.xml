@@ -11,7 +11,7 @@
 			//function () {
 				var prefs = new gadgets.Prefs();
 				console.log(prefs.getString("jamTargetItem"));
-				console.log(opensocial.data.getContext());
+				console.log(location);
 
 				if(!RVBD_EUE){
 					var RVBD_EUE={startJS:Number(new Date()),
