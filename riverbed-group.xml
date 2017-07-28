@@ -10,22 +10,28 @@
 		//gadgets.util.registerOnLoadHandler(
 		  // function () {
 			//console.log("gadgets.sapjam.context");
-
-			//var riverbedCall = function (tag1, tag2) {
+			var RVBD_EUE = {};
+ 
+			var riverbedObjectBuild = function (tag1, tag2) {
 				if(!RVBD_EUE){
-				   var RVBD_EUE={startJS:Number(new Date()),
-				   clientId:'',appId:1,
-				   collector:'cht4501.lsdc.ch.pmi',
-				   collectorHttpPort:80, collectorHttpsPort:443,
-				   sv:'0401',
-				   ajax:true, sync:true,
-				   ajaxResponseTime:true,
-				   tag1:tag1,
-				   tag2:tag2};
+				   var RVBD_EUE={
+					startJS:Number(new Date()),
+				   	clientId:'',appId:1,
+				   	collector:'cht4501.lsdc.ch.pmi',
+				   	collectorHttpPort:80, 
+					collectorHttpsPort:443,
+				   	sv:'0401',
+				   	ajax:true, 
+					sync:true,
+				   	ajaxResponseTime:true,
+				   	tag1:tag1,
+				   	tag2:tag2
+				    };
+				}
+			}
+			console.log(RVBD_EUE);
 
-				   console.log(RVBD_EUE);
-
-				(function(){
+			var riverbedCall = function(){
 				      var w=window,l=w.addEventListener,m=w.attachEvent,
 				      d=document,s='script',t='load',o=RVBD_EUE,
 				      r=(('https:'===d.location.protocol)?
@@ -42,13 +48,11 @@
 				      {m('on'+e,h);if(p){m('on'+t,i);}}
 				      if(o.sync){d.write('<'+s+' src=\''+r+'\'></'+s+'>');}
 				      else{x.parentNode.insertBefore(j,x);}
-				   })();}
-			//}
+				   }
 
-			//riverbedCall('id', 'name');
 			gadgets.sapjam.context.get(function(context){
 				console.log(context);
-			//	riverbedCall(context.group.id, context.group.name);
+				riverbedCall(riverbedObjectBuild(context.group.id, context.group.name));
 			});
 //			   });
 //		    }
