@@ -8,7 +8,7 @@
 		<script>
 		//gadgets.util.registerOnLoadHandler(
 			//function () {
-				console.log(parent);
+				console.log(parent.location.href);
 				if(!RVBD_EUE){
 					var RVBD_EUE={startJS:Number(new Date()),
 					clientId:'FEDDD9C43ED1CF89',appId:1,
