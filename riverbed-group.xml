@@ -11,7 +11,7 @@
 		  // function () {
 			//console.log("gadgets.sapjam.context");
 
-			var riverbedCall = function (tag1, tag2) {
+			//var riverbedCall = function (tag1, tag2) {
 				if(!RVBD_EUE){
 				   var RVBD_EUE={startJS:Number(new Date()),
 				   clientId:'',appId:1,
@@ -43,12 +43,12 @@
 				      if(o.sync){d.write('<'+s+' src=\''+r+'\'></'+s+'>');}
 				      else{x.parentNode.insertBefore(j,x);}
 				   })();}
-			}
+			//}
 
-			riverbedCall('id', 'name');
+			//riverbedCall('id', 'name');
 			gadgets.sapjam.context.get(function(context){
 				console.log(context);
-				riverbedCall(context.group.id, context.group.name);
+			//	riverbedCall(context.group.id, context.group.name);
 			});
 //			   });
 //		    }
