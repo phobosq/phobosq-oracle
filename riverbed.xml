@@ -8,10 +8,10 @@
 		<script>
 		gadgets.util.registerOnLoadHandler(
 			function () {
-			gadgets.sapjam.context.get(function(context){
-				console.log(context);
+			//gadgets.sapjam.context.get(function(context){
+			//	console.log(context);
 
-			});
+			//});
 			if(!RVBD_EUE){
 				var RVBD_EUE={startJS:Number(new Date()),
 				clientId:'FEDDD9C43ED1CF89',appId:1,
