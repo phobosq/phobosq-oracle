@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-	<ModulePrefs title="Riverbed tracking gadget - Inspirations home" description="Riverbed tracking gadget" author="Szymon Wojcik" author_email="szymon.wojcik@pmi.com" height="1">
+	<ModulePrefs title="Riverbed tracking gadget - Inspirations home" description="Riverbed tracking gadget - Inspirations home" author="Szymon Wojcik" author_email="szymon.wojcik@pmi.com" height="1">
   		<Require feature="dynamic-height"/>
   	</ModulePrefs>
 	<UserPref name="jamTargetItem" display_name="itemID" default_value="Home" />
