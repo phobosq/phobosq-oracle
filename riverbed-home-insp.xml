@@ -3,7 +3,7 @@
 	<ModulePrefs title="Riverbed tracking gadget - Inspirations home" description="Riverbed tracking gadget - Inspirations home" author="Szymon Wojcik" author_email="szymon.wojcik@pmi.com" height="1">
   		<Require feature="dynamic-height"/>
   	</ModulePrefs>
-	<UserPref name="jamTargetItem" display_name="itemID" default_value="Home" />
+	<UserPref name="jamTargetItem" display_name="itemID" default_value="inspirations" />
    <Content type="html"> 
      <![CDATA[ 
 		<script>
@@ -21,7 +21,7 @@
 					sv:'0401',
 					ajax:true, sync:true,
 					ajaxResponseTime:true,
-					tag1:'inspirations'
+					tag1:${Prefs.jamTargetItem}
 					};
 					(function(){
 						var w=window,l=w.addEventListener,m=w.attachEvent,
