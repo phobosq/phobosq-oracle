@@ -20,7 +20,8 @@
 					collectorHttpPort:80, collectorHttpsPort:443,
 					sv:'0401',
 					ajax:true, sync:true,
-					ajaxResponseTime:true
+					ajaxResponseTime:true,
+					tag1:'inspirations'
 					};
 					(function(){
 						var w=window,l=w.addEventListener,m=w.attachEvent,
