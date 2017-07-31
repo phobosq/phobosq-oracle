@@ -10,8 +10,6 @@
 		//gadgets.util.registerOnLoadHandler(
 			//function () {
 				var prefs = new gadgets.Prefs();
-				console.log(prefs.getString("jamTargetItem"));
-				console.log(location);
 
 				if(!RVBD_EUE){
 					var RVBD_EUE={startJS:Number(new Date()),
@@ -21,7 +19,7 @@
 					sv:'0401',
 					ajax:true, sync:true,
 					ajaxResponseTime:true,
-					tag1:${Prefs.jamTargetItem}
+					tag1:prefs.getString("jamTargetItem")
 					};
 					(function(){
 						var w=window,l=w.addEventListener,m=w.attachEvent,
