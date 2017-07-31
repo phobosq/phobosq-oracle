@@ -10,7 +10,6 @@
 		//gadgets.util.registerOnLoadHandler(
 			//function () {
 				var prefs = new gadgets.Prefs();
-console.log(gadgets.views.getParams());
 
 				if(!RVBD_EUE){
 					var RVBD_EUE={startJS:Number(new Date()),
